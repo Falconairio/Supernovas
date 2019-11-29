@@ -61,3 +61,19 @@ table {
     font-size: 3vh;
     font-family: 'Space Mono', monospace;
 }
+.sitefooter {
+    width: 100vw;
+    height: 7vh;
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+.sitefooter p {
+    display: flex;
+    color: white;
+}
+.topbar {
+    position: sticky;
+    top: 0;
+}
