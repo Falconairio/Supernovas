@@ -3,8 +3,12 @@ const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
 const path    = require('path');
-const PunkAPIWrapper = require('punkapi-javascript-wrapper');
-const punkAPI = new PunkAPIWrapper();
+const apod = require('nasa-apod');
+
+var client = new apod.Client({
+    apiKey: 'MTEty7iFcefUWiODoYRu77lZxxPbeFv880puqA2L',
+    conceptTags: true
+});
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
@@ -12,7 +16,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials')
 
 app.get('/', (req, res, next) => {
-  res.render('index');
+    client().then(function(body) {
+        console.log(body);
+        res.render('index',{ spacepic: body});
+    })
+  
 });
 
 app.get("/beers", (req, res, next) => {
@@ -34,12 +42,3 @@ app.get("/random-beers", (req, res, next) => {
 });
 
 app.listen(3000);
-
-
-punkAPI.getRandom()
-  .then(beers => {
-
-  })
-  .catch(error => {
-    console.log(error)
-  })
