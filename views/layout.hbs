@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83d2cf995f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,9 +20,12 @@
 
         <div class="container">
             <form id="get-data-form">
-                <input id="data-name" class="searchbar" type="text" placeholder="Search for a data...">
-                <button type="submit" id="get" class="btn-search"><img class="fa fa-search"
-                        src="/images/grey-search-icon.png"></img></button>
+                <input id="data-name " class="searchbar input is-medium" type="text" placeholder="Search for a data...">
+                <span class="icon is-left">
+                    <i class="fas fa-search"></i>
+                </span>
+                {{!-- <button type="submit" id="get" class="btn-search"><img class="fa fa-search"
+                        src="/images/grey-search-icon.png"></img></button> --}}
             </form>
         </div>
     </nav>
