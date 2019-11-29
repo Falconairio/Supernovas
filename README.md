@@ -180,6 +180,6 @@ URls for the project repo and deploy
 [Link Deploy](http://github.com)
 
 
-### Slides
+### Google Slides
 URls for the project presentation (slides)
-[Link Slides.com](http://slides.com)
+[Link url](https://docs.google.com/presentation/d/14XDpVqsX_H2atC_0xkoQ_6CgJMP1-dYV-oeCNIJvqJs/edit#slide=id.g35f391192_00)
