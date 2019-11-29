@@ -155,8 +155,9 @@ table {
     padding-top: 20px;
 }
 
-form {
+#get-data-form {
     font-size: 2rem;
+    padding-top: 2rem;
     
 }
 
