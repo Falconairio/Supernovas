@@ -1,1 +1,9 @@
-{{!-- test --}}
+const express = require('express');
+const hbs     = require('hbs');
+const app     = express();
+const path    = require('path');
+const apod = require('nasa-apod');
+var client = new apod.Client({
+    apiKey: 'MTEty7iFcefUWiODoYRu77lZxxPbeFv880puqA2L',
+    conceptTags: true
+});
