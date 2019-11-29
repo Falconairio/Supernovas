@@ -171,7 +171,7 @@ Enemy.prototype.isInsideScreen() {
 
 
 ### Trello
-[Link url](https://trello.com/b/JPkqm7jW/ironhack-project-1-platformer)
+[Link url](https://trello.com/b/GxRdLZNQ/supernovas)
 
 
 ### Git
