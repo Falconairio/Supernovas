@@ -18,7 +18,7 @@ function main() {
     
         // Make a GET request -  get one data
         axios
-            .get(`https://eonet.sci.gsfc.nasa.gov/api/v2/events?limit=5&days=20&status=open`)
+            .get(`https://eonet.sci.gsfc.nasa.gov/api/v2/events?limit=20&days=365&status=open`)
             .then(response => {
                 // Grab all input fields from the update form (still invisible)
                 // const inputNodes = updateForm.querySelectorAll('input');
@@ -35,7 +35,7 @@ function main() {
                 let htmlString = "";
                 newData.forEach(function(event) {
                     htmlString += `
-                    <a>
+                    <a href = 'searchResult/?id=${event.id}'>
                         <h2>${event.title}</h2>
                         <p>Category:${event.categories[0].title}</p>
                     </a>
