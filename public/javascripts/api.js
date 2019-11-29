@@ -30,52 +30,22 @@ function main() {
                     };
                 }
                 console.log(newData);
-                
-                const events = response.data.results;
                 const resultList = document.querySelector('.data-results');
-    console.log('THISSSSSSSSS IS WHERE THE DATA ISSSSSS',response.data);
     
                 let htmlString = "";
                 newData.forEach(function(event) {
                     htmlString += `
-                    <div style = "
-                                display:flex; 
-                                flex-direction:column;
-                                justify-content:space-around"
-                                    >
-                            <h2 style="text-align:center;
-                                margin-top:10%;
-                                margin-bottom:5%;
-                                font-size:50px;" 
-                            class='event-title event-details-link' 
-                            data-eventid='${events.id}'
-                            >
-                            ${events.title} (${events.release_date.slice(0,4)})
-                            </h2>
-                                </div>`
+                    <a>
+                        <h2>${event.title}</h2>
+                        <p>Category:${event.categories[0].title}</p>
+                    </a>
+                    `
     
                 })
                 resultList.innerHTML = htmlString;
-    
-                const getEventDetailLinks = document.querySelectorAll('.event-details-link')
-    
-    
-                getEventDetailLinks.forEach((element) => {
-    
-                    element.addEventListener('click', (e) => {
-                        const eventId = element.dataset.eventid;
-    
-                        // axios.get(`/private/eventDetail/get/${eventId}`)
-                        window.location.assign(`/private/eventDetail/${eventId}`)
-                    })
-    
-    
-                })
-    
             })
             .catch(err => console.log(err));
     })
-    
     }
     
     window.addEventListener('load', main);
