@@ -28,7 +28,7 @@ app.get('/', (req, res, next) => {
   
 });
 app.get('/search',(req,res,next) => {
-    res.render('searchResult')
+    res.render('searchResult',{id: req.query.id})
 })
 
 app.listen(3000);
