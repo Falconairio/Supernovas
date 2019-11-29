@@ -12,22 +12,22 @@ function main() {
     
     
         // Get the id of the data from the input field
-        const name = document.querySelector('#data-name').value;
+        const title = document.querySelector('#data-title').value;
     
         // If no id was provided, stop the function
     
-        if (!name) return;
+        if (!title) return;
     
         // Make a GET request -  get one data
         axios
-            .get(`https://api.themoviedb.org/3/search/movie?api_key=885dbfba88f11b7023082ad1956f5310&language=en-US&query=${name}&page=1&include_adult=false`)
+            .get(`https://eonet.sci.gsfc.nasa.gov/api/v2.1/events`)
             .then(response => {
                 // Grab all input fields from the update form (still invisible)
                 // const inputNodes = updateForm.querySelectorAll('input');
                 // const inputElements = [...inputNodes];
                 const events = response.data.results;
                 // console.log(response.data.results);
-                const resultList = document.querySelector('.movie-results');
+                const resultList = document.querySelector('.data-results');
     
                 let htmlString = "";
                 events.forEach(function(event) {
@@ -42,15 +42,10 @@ function main() {
                                 margin-bottom:5%;
                                 font-size:50px;" 
                             class='event-title event-details-link' 
-                            data-eventid='${event.id}'
+                            data-eventid='${events.id}'
                             >
-                            ${event.title} (${event.release_date.slice(0,4)})
+                            ${events.title} (${events.release_date.slice(0,4)})
                             </h2>
-                            <img style= "width:500px;height:auto;margin-left:25%;margin-right:25%"
-                            class="event-details-link" 
-                            src="https://image.tmdb.org/t/p/w500${event.poster_path}"
-                                data-eventid='${event.id}'
-                                />
                                 </div>`
     
                 })
