@@ -1,4 +1,3 @@
-
 const express = require('express');
 const hbs     = require('hbs');
 const app     = express();
@@ -17,28 +16,16 @@ hbs.registerPartials(__dirname + '/views/partials')
 
 app.get('/', (req, res, next) => {
     client().then(function(body) {
-        console.log(body);
-        res.render('index',{ spacepic: body});
+        var string = '';
+        for(let i = 0; i < body.explanation.length; i++) {
+            string += body.explanation.charAt(i);
+            if(body.explanation.charAt(i) === '.') {
+                break;
+            }
+        }
+        res.render('index',{ spacepic: body, description: string});
     })
   
-});
-
-app.get("/beers", (req, res, next) => {
-  punkAPI.getBeers().then( (response) => {
-    const data = {
-      beers: response,
-    }
-    res.render("beers",data);
-  }).catch();
-});
-
-app.get("/random-beers", (req, res, next) => {
-  punkAPI.getRandom().then( (response) => {
-    const data = {
-      beer: response,
-    }
-    res.render("randomBeer",data);
-  }).catch();
 });
 
 app.listen(3000);
