@@ -21,17 +21,13 @@ Supernova is a website where users can asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkj
 </ul>
 
 ## Data structure
+`
 
 
-
-
-## States y States Transitions
-```
-
-
-````
+`
 
 ## Tasks
+
 
 
 ## Links
