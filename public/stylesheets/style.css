@@ -44,4 +44,20 @@ table {
 .spacepic {
     width: 100vw;
     height: 70vw;
+    margin-bottom: 0;
+}
+.picdesc {
+    background-color:black;
+    color: white;
+    margin-top: -5px;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+.spaceheader {
+    position: absolute;
+    display: flex;
+    align-self: baseline flex-start;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3vh;
+    font-family: 'Space Mono', monospace;
 }
