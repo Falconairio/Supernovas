@@ -35,10 +35,36 @@ function main() {
                 let htmlString = "";
                 newData.forEach(function(event) {
                     htmlString += `
-                    <a href = 'searchResult/?id=${event.id}'>
+                    <div style="
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 60vw;
+                    height: 30vh;
+                    background-color:#0066b2;
+                    border-radius: 25px;
+                    border: 5px solid #ec1c24;
+                    ">
+                    <a style="
+                    text-align:center;
+                    margin-top:10%;
+                    margin-bottom:5%;
+                    font-color: white;
+                    letter-spacing: 1.75px;
+                    font-weight: bolder;
+                    margin: 10px 20px 10px 20px;
+                    font-size:1em;"
+
+                    href = 'searchResult/?id=${event.id}'>
                         <h2>${event.title}</h2>
                         <p>Category:${event.categories[0].title}</p>
                     </a>
+                    </div>
                     `
     
                 })

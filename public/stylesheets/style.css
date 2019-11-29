@@ -141,6 +141,7 @@ table {
     margin-top: -5px;
     font-family: 'Space Mono', monospace;
     font-size: 20px;
+    padding: 0 35px 35px 35px;
 }
 
 .spaceheader {
@@ -150,10 +151,14 @@ table {
     color: rgba(255, 255, 255, 0.5);
     font-size: 3vh;
     font-family: 'Space Mono', monospace;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
-form {
+#get-data-form {
     font-size: 2rem;
+    padding-top: 2rem;
+    
 }
 
 header.nav {
@@ -161,18 +166,30 @@ header.nav {
 }
 
 img.logo {
-    height: 70px;
+    height: 6vw;
+    
+    }
 
-}
+ img.eye {
+    
+    width: 40vw;
+ } 
 
 a.nav-item {
     width: 300px;
+    padding-left: 5vw;
 }
 
 .nav-item img {
     max-height: 100px;
-}
+    }
 
 footer {
     height: 5vh;
+}
+
+.footer-text {
+    height: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
