@@ -6,37 +6,97 @@
     <meta charset="utf-8">
     <title>Discover NASA with The Supernovas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/83d2cf995f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-    <nav class="navbar container">
-        <a href="./"><img src="" alt="logo pic"></a>
-        <h1>Discover NASA with The Supernovas</h1>
+    <section class="hero is-dark is-fullheight">
+        <!-- Hero header: will stick at the top -->
+        <div class="hero-head">
+            <header class="nav">
+                <div class="container">
+                    <div class="nav-left">
+                        <a href="./" class="nav-item">
+                            <img class="logo" src="https://www.festisite.com/static/partylogo/img/logos/nasa.png"
+                                alt="logo pic">
+                        </a>
+                    </div>
+                    <span class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div class="nav-right nav-menu">
 
-        <div class="container">
-            <form id="get-data-form" action='/search'>
-                <input id="data-name " class="searchbar input is-medium" type="text" placeholder="Search for a data...">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-search"></i>
-                </span>
-                {{!-- <button type="submit" id="get" class="btn-search"><img class="fa fa-search"
-                        src="/images/grey-search-icon.png"></img></button> --}}
-            </form>
+                        <form id="get-movie-form">
+
+                            <input id="movie-name" class="searchbar" type="text" placeholder="Search for a movie...">
+
+                            <button type="submit" id="get" class="btn-search"><img class="fa fa-search"
+                                    src="/images/grey-search-icon.png"></img></button>
+                        </form>
+
+                        {{!-- <form id="control get-data-form" action='/search'>
+                                <input id="input is-medium data-name " class="searchbar input is-medium" type="text"
+                                    placeholder="Search for a data...">
+                                <span class="icon is-small is-left">
+                                <i class="fas fa-search"></i>
+                            </span> --
+                        
+                        <div class="control">
+                            <a class="button is-info">
+                                Search
+                            </a>
+                        </div>
+                        </form> --}}
+                    </div>
+                </div>
         </div>
-    </nav>
+        </header>
+        </div>
 
-    <div class='view-container'>
-        {{{ body }}}
-    </div>
+        {{!-- <nav class="navbar container level">
+            <div class="level-left">
+                <a href="./"><img src="" alt="logo pic"></a>
+                <h1>Discover NASA with The Supernovas</h1>
+            </div>
 
-    <footer>
-        <h4>Develop by The Supervovas</h4>
-    </footer>
+            <div class="container level-right">
+                <form class="control has-icons-left has-icons-right" id="get-data-form" action='/search'>
+                    <input id="input is-medium data-name " class="searchbar input is-medium" type="text"
+                        placeholder="Search for a data...">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+
+                    to comment below
+                    <button type="submit" id="get" class="btn-search"><img class="fa fa-search"
+                        src="/images/grey-search-icon.png"></img></button>
+        </form>
+        </div>
+        </nav> --}}
+
+        <div class='view-container'>
+            {{{ body }}}
+        </div>
+        <!-- Hero footer: will stick at the bottom -->
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <h4>Develop by The Supernovas</h4>
+                </div>
+            </nav>
+        </div>
+        {{!-- <footer>
+            <h4>Develop by The Supervovas</h4>
+        </footer> --}}
+    </section>
 
 </body>
 
