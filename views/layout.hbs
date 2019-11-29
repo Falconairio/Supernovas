@@ -1,15 +1,39 @@
+{{!-- test --}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Supernova</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">    
+    <meta charset="utf-8">
+    <title>Discover NASA with The Supernovas</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
-  <div class='view-container'>
-    {{{ body }}}
-  </div>
+
+    <nav class="navbar">
+        <a href="./"><img src="" alt="logo pic"></a>
+        <h1>Discover NASA with The Supernovas</h1>
+
+        <div class="container">
+            <form id="get-data-form">
+                <input id="data-name" class="searchbar" type="text" placeholder="Search for a data...">
+                <button type="submit" id="get" class="btn-search"><img class="fa fa-search"
+                        src="/images/grey-search-icon.png"></img></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class='view-container'>
+        {{{ body }}}
+    </div>
+
+    <footer>
+        <h4>Develop by The Supervovas</h4>
+    </footer>
+
 </body>
-</html>
+
 </html>
