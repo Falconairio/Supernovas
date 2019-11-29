@@ -1,5 +1,5 @@
-# JUMPER
-Ironhack - Project One
+# SUPERNOVAS
+Ironhack - Hackathon 
 
 ## Description
 Jumper is a game where the player can move left, right and jump. The goal of the game is to move your character to reach the "star" at the top of the map. Along the way, the player can "die" when they collide with obstacles. Upon dying, a "Game Over" screen will appear with the ability to restart game.
