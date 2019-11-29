@@ -16,6 +16,15 @@
 
 <body>
 
+    <nav class="navbar">
+        {{!-- <a href="./"><img src="" alt="logo pic"></a>
+        <h1>Discover NASA with The Supernovas</h1>
+        <div class="container">
+            <form id="get-data-form" action='/search' method='get'>
+                <input id="data-title" class="searchbar" type="text" placeholder="Search for a data...">
+                <button type="submit" id="get" class="btn-search">SEARCH EVENT <img class="fa fa-search">
+                    src="/images/grey-search-icon.png"></img> </button> 
+            </form> --}}
     <section class="hero is-dark is-fullheight">
         <!-- Hero header: will stick at the top -->
         <div class="hero-head">
@@ -36,9 +45,9 @@
                     </span> --}}
                     <div class="nav-right nav-menu is-active">
 
-                        <form id="get-data-form">
+                        <form id="get-data-form" method='get'>
 
-                            <input id="data-name" class="searchbar" type="text" placeholder="Search for a data...">
+                            <input id="data-title" class="searchbar" type="text" placeholder="Search for Natural Event">
 
                             <button type="submit" id="get" class="btn-search"><img class="fa fa-search"
                                     src="/images/grey-search-icon.png"></img></button>
@@ -58,12 +67,15 @@
         <div class="hero-foot">
             <nav class="tabs is-boxed is-fullwidth">
                 <div class="container">
-                    <h4>Develop by The Supernovas</h4>
+                    <h4 class="footer-text">Develop by The Supernovas</h4>
                 </div>
             </nav>
         </div>
 
     </section>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/javascripts/api.js"></script>
 
 </body>
 

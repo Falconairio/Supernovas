@@ -131,7 +131,7 @@ table {
 
 .spacepic {
     width: 100vw;
-    height: 82vh;
+    height: auto;
     margin-bottom: 0;
 }
 
@@ -141,6 +141,7 @@ table {
     margin-top: -5px;
     font-family: 'Space Mono', monospace;
     font-size: 20px;
+    padding: 0 35px 35px 35px;
 }
 
 .spaceheader {
@@ -150,6 +151,8 @@ table {
     color: rgba(255, 255, 255, 0.5);
     font-size: 3vh;
     font-family: 'Space Mono', monospace;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 form {
@@ -182,4 +185,10 @@ a.nav-item {
 
 footer {
     height: 5vh;
+}
+
+.footer-text {
+    height: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
