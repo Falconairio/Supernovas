@@ -154,6 +154,7 @@ table {
 
 form {
     font-size: 2rem;
+    
 }
 
 header.nav {
@@ -161,17 +162,23 @@ header.nav {
 }
 
 img.logo {
-    height: 70px;
+    height: 6vw;
+    
+    }
 
-}
+ img.eye {
+    
+    width: 40vw;
+ } 
 
 a.nav-item {
     width: 300px;
+    padding-left: 5vw;
 }
 
 .nav-item img {
     max-height: 100px;
-}
+    }
 
 footer {
     height: 5vh;
