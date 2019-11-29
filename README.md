@@ -5,7 +5,7 @@ Ironhack - Hackathon
 Supernova is a website where users can asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh asdk ahsfkjh ajdhfj khasdlkgh .
 
 
-## MVP (DOM - CANVAS)
+## MVP (HTML / CSS)
 <ul>
   <li>API fetch with Axios in the Frontend</li>
   <li>Create 2 pages minimum</li>
